@@ -21,3 +21,8 @@ SET SQL_SAFE_UPDATES = 0;
 UPDATE Computer SET Graphics = 'Integrated Intel HD Graphics 4600';
 ALTER TABLE Computer DROP ProcessorSpeed;
 SELECT*FROM Computer;
+
+SELECT*FROM Computer;
+SELECT Make FROM Computer where SerialNumber = '6541001' AND ProcessorType = 'Intel i7-4770';
+SELECT Make, Model FROM Computer where Graphics = 'Integrated Intel HD Graphics 4600' AND DiskSize = '1.0 Tbytes';
+SELECT*FROM Computer where not make = 'HP';
